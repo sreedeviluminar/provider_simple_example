@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../model/counter_model.dart';
 
 class CounterProvider extends ChangeNotifier {
-  Counter _counter = Counter(0);
+  final Counter _counter = Counter(0);
 
   Counter get counter => _counter;
 

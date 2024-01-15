@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_simple_example/provider/counter_provider.dart';
+import 'package:provider_simple_example/using_single_provider/provider/counter_provider.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,19 +25,19 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Provider Example'),
+        title: const Text('Provider Example'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('Counter Value: ${counterProvider.counter.value}'),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 counterProvider.increment();
               },
-              child: Text('Increment'),
+              child: const Text('Increment'),
             ),
           ],
         ),
